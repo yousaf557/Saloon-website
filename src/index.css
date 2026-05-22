@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 33% 97%;
+    --foreground: 30 8% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 8% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 8% 16%;
+    --primary: 30 8% 16%;
+    --primary-foreground: 30 33% 97%;
+    --secondary: 30 20% 94%;
+    --secondary-foreground: 30 8% 16%;
+    --muted: 30 20% 94%;
+    --muted-foreground: 25 12% 47%;
+    --accent: 28 30% 64%;
+    --accent-foreground: 30 8% 16%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 28 30% 64% / 0.2;
+    --input: 28 30% 64% / 0.2;
+    --ring: 28 30% 64%;
+    --radius: 0.625rem;
+    --sidebar-background: 30 33% 97%;
+    --sidebar-foreground: 30 8% 16%;
+    --sidebar-primary: 30 8% 16%;
+    --sidebar-primary-foreground: 30 33% 97%;
+    --sidebar-accent: 30 20% 94%;
+    --sidebar-accent-foreground: 30 8% 16%;
+    --sidebar-border: 28 30% 64% / 0.2;
+    --sidebar-ring: 28 30% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-charcoal font-sans antialiased;
+    background: linear-gradient(90deg, #F6D5F7, #FBE9D7);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
