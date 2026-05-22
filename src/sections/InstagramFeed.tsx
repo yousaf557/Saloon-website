@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Heart, MessageCircle, Share2 } from 'lucide-react';
+import { Heart, MessageCircle } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
