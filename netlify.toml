@@ -1,0 +1,3 @@
+[build]
+  command = "npm install --registry https://registry.npmjs.org && npm run build"
+  publish = "dist"
